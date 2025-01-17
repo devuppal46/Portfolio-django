@@ -1,0 +1,47 @@
+{% extends 'main/base.html' %}
+
+{% block body %}
+   {% include 'main/nav.html' %}
+    <div class="container">
+        <h2 class="center-align">HOME PAGE</h2>
+    </div>
+
+    <div class="row">
+        <div class="col s12 m4">
+            <div class="card blue-grey lighten-1">
+                <div class="card-content white-text hoverable">
+                  <img class="materialboxed responsive-img" src="static/pics/pic1.jpg" alt="">
+                  <span class="card-title">Dev Uppal</span>
+                  <p></p>
+                </div>
+                <div class="card-action">
+                  <a href="https://github.com/devuppal46">Github</a>
+                  <a href="https://www.linkedin.com/in/devuppal46/">Linkedin</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m8">
+            <div class="card blue-grey lighten-1">
+                <div class="card-content white-text hoverable">
+                  <span class="card-title"><h3>About Me</h3></span>
+                  <p class="flow-text"><blockquote>
+                    I am a passionate and innovative second-year college student at Maharaja Agrasen College, with a strong foundation in software development and AI technologies. My expertise spans building AI-powered solutions, anomaly detection systems, and multilingual models for impactful applications like healthcare and education. I am proficient in C++, Python (scikit-learn, TensorFlow), and full-stack development with Node.js, Express.js, and MongoDB.
+
+                    I thrive in challenging environments, participating in numerous hackathons and delivering unique projects, including tools for digital forensics and AI-driven chess coaching platforms. My certifications, such as Oracle Cloud Infrastructure Generative AI, underscore my dedication to cutting-edge technology.
+                    
+                    Beyond academics, I enjoy playing chess, badminton, and teaching data structures to my juniors, combining mentorship with continuous learning. With a vision to advance AI in Bharat, I aim to contribute to transformative technologies in large language models and computer vision.
+                  </blockquote></p>
+                </div>
+            </div>
+        </div>       
+    </div>
+
+{% endblock %}
+{% block script %} 
+    <script>   
+       document.addEventListener('DOMContentLoaded', function() {
+       var elems = document.querySelectorAll('.materialboxed');
+       var instances = M.Materialbox.init(elems);
+       });
+    </script>
+{% endblock %}
